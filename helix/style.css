@@ -1,0 +1,503 @@
+*{
+    /* APLICAMOS LAS FUENTES*/
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    /* CONFIGURACION INICIAL DEL PROYECTO */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+
+/* Armado de colores */
+:root{
+    --fondo: white;
+    --letra: #2196f3;
+    --fondo-menu: #003785;
+    --fondo-titulo:#1465bb;
+}
+
+/* Armado de menu */
+
+
+.c-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--fondo-menu); 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 9%;
+    justify-content: space-between;
+    z-index: 1000;
+   
+}
+.c-header-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 5rem;
+}
+
+.c-logo{
+    margin-left: 5rem;
+}
+
+li{
+    display: inline-block;
+}
+
+.c-nav a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+.c-nav a:hover{
+    color: var(--letra);   
+}
+
+/* menu hamburguesa */
+header input {
+    display: none;
+}
+
+header label {
+    font-size: 3rem;
+    cursor: pointer;
+    visibility: hidden; /* para no mostrar la hambuesa*/
+    opacity: 0;
+}
+
+body{
+    background-color: var(--fondo);
+}
+
+/* CUERPO DE PAGINA */
+
+/* seccion de inicio, imagen + nombre  */
+
+.inicio{
+    background-image: url(imagenes/img1.png) ;
+    width: 100%;
+    height: 50rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+}
+
+.text-inicio{
+    margin-bottom: 3rem;
+}
+
+.text-inicio h1{
+    font-size: 8rem;
+    text-shadow: 0px 0px 4px #000;
+    color: white;
+    margin-bottom: -1rem;
+}
+
+.text-inicio span{
+    font-size: 2rem;
+    color: white;
+}
+
+.cont-frase{
+    /* background: red; */
+    width: 100%;
+    height: 10rem;
+    border: 20px;
+    /* border-radius: 2px solid red; */
+    text-align: center;
+    padding: 2rem;
+}
+
+.frase{
+    font-size: 4rem;
+    text-transform: none;
+    color: var(--fondo-menu);
+    
+}
+
+/* seccion 2, armado de contenedores informativos  */
+
+.titulos{
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+    
+}
+
+.servicios{
+    background: #003785;
+}
+
+.servicios h1{
+    color: white;
+}
+
+.caja-contenedora{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+    text-transform:capitalize;
+}
+
+
+.caja-contenedora .caja{
+    width: 30rem;
+    height: 30rem;
+    /* flex: 1 1 20rem; */
+    background: white;
+    color: var(--fondo-menu);
+    border-radius: 0.5rem;
+    border: .1rem solid white;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 1);
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.servicios .caja-contenedora .caja img{
+    height: auto;
+    width: 100%;
+}
+
+.servicios .caja-contenedora .caja h3 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform: none;
+}
+
+.servicios .caja-contenedora .caja p{
+    text-transform: none;
+}
+
+.nosotros{
+    margin-top: 0;
+    color: #003785;
+}
+
+.nosotros p{
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: none;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 2rem;
+    line-height: 3rem;
+}
+
+.planes{
+    background: var(--fondo-menu);
+    width: 100%;
+    height: auto;
+}
+
+.planes .caja-contenedora .caja{
+    height:30rem;
+    width: auto;
+    line-height: 2.5rem;
+    border-radius: 2rem;
+}
+
+.planes .caja-contenedora .caja h3{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.planes .caja-contenedora .caja p{
+    font-size: 1.3rem;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    background: var(--fondo-menu);
+    font-size: 1rem;
+    color: var(--letra);
+    cursor: pointer;
+}
+
+.boton:hover{
+    background: var(--letra);
+    color:#003785
+    
+}
+
+.planes h1{
+    color:white;
+}
+
+.planes .caja-contenedora .caja ul li .fa-check {
+    color: lightgreen;
+}
+
+.planes .caja-contenedora .caja ul li .fa-times {
+    color: red;
+}
+.sub-titulo{
+
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    text-transform: none;
+    padding-bottom: 2rem;
+}
+
+.sub-titulo a{
+    color:whitesmoke;
+    text-transform: none;
+}
+
+.sub-titulo a:hover{
+    cursor:pointer;
+    color:#2196f3;
+}
+
+.contactos{
+    background-image: url(imagenes/img4.png);
+}
+
+.titulos-contacto{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.info-contacto-caja h1{
+    font-size: 2rem;
+}
+
+.contactos li{
+    text-transform: none;
+}
+
+.info-contacto{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+    text-transform:capitalize;
+}
+
+.info-contacto-caja{
+    flex: 1 1 20rem;
+    color: var(--fondo-menu);
+    margin: 1.5rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.info-contacto-caja form {
+      border-radius: 2rem;
+    border: .1rem solid #003785;
+    padding: 1rem;
+    background: white;
+}
+
+.info-contacto-caja ul{
+    width: 100%;
+    padding: 2rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: white;
+    background: #003785;
+}
+
+.fa-whatsapp {
+    color: lightgreen;
+    padding-right: .5rem;
+}
+
+.fa-envelope{
+    padding-right: .5rem;
+}
+
+.fa-location-dot {
+    padding-right: .5rem;
+    color:red;
+}
+
+.info-contacto-caja .inputcaja {
+    position: relative;
+}
+
+.info-contacto-caja .inputcaja input, .info-contacto-caja .inputcaja textarea {
+    width: 100%;
+    height: 2rem;
+    background: none;
+    color: var(--fondo-menu);
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-bottom: .1rem solid var(--fondo-menu);
+    text-transform: none;
+}
+
+.info-contacto-caja .inputcaja textarea{
+    resize: none;
+    height: 7rem;
+}
+
+.info-contacto-caja .inputcaja label {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    font-size: 1.3rem;
+    color:var(--fondo-menu);
+    transition: .3s linear;
+}
+
+.info-contacto-caja .inputcaja input:focus ~ label, 
+.info-contacto-caja .inputcaja input:valid ~ label,
+.info-contacto-caja .inputcaja textarea:focus ~ label,
+.info-contacto-caja .inputcaja textarea:valid ~ label {
+    top: -.5rem;
+    font-size: 1.5rem;
+}
+
+.info-contacto-caja .boton{
+    padding: 1.5rem 2.5rem;
+    font-size: 1.3rem;
+}
+
+footer{
+    color: #2196f3;
+    text-align: center;
+    justify-content: center;
+    font-size: .6rem;
+    height: 2rem;
+}
+
+.ancla-creditos{
+    text-transform: none;
+    color: #2196f3;
+}
+
+.ancla-creditos:visited{
+    color: #2196f3;
+}
+
+.ancla-creditos:hover{
+    color:#003785
+}
+   
+/* RESPONSIVE */
+
+
+@media (max-widht:1400px){
+    html {
+        font-size: 100%;
+    }
+}
+
+@media (max-widht:1280px){
+    .text-inicio span{
+        padding-top: 200px;
+    }
+}
+
+@media (max-width:1024px){
+    .text-inicio h1{
+        font-size: 8rem;
+    }
+    .text-inicio span{
+        font-size: 2rem;
+        top: 52%;
+    }
+}
+
+@media(max-width:768px){
+    html {
+        font-size: 70%;
+    }
+
+    .text-inicio span{
+        top: 50%; 
+    }
+
+    .c-header label {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .c-header .c-header-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+        /*para activar el menu hamburguesa */
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear; /* para que la apertura del menu sea suave*/
+    }
+
+    .c-header .c-header-nav .c-nav a {
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+        color: var(--letra);
+        margin-left: 2rem;
+    }
+
+    .c-header .c-header-nav .c-nav a:hover{
+        color: var(--fondo-menu)
+    }
+
+    .c-header input:checked ~ .c-header-nav {
+        transform: scaleY(1);
+        opacity: 1;
+
+    }
+
+    .c-header input:checked ~ label::before {
+        content:'\f00d';
+    }
+
+   
+
+}
+
+@media(max-width:480px){
+    html {
+        font-size: 50%;
+    }
+
+    .text-inicio h1{
+        font-size: 7rem;
+    }
+
+    .text-inicio span{
+        top: 51%;
+        left: 35%;
+        font-size: 1.8rem;
+    }
+
+}
